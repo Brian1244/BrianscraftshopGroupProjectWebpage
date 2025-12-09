@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart | Brian's Craft Shop</title>
+    <!-- Google Material Icons  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- Link to CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <!-- Shop logo image -->
+    <img src="Brian'scraftshop.png" alt="Brian's craft shop Logo" class="logo">
+    <h1>Brian's Craft Shop</h1>
+    <!-- Navigation bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html"><span class="material-icons">home</span> home</a></li>
+            <li><a href="about.html"><span class="material-icons">info</span> About</a></li>
+            <li><a href="login.html"><span class="material-icons">login</span> Login</a></li>
+            <li><a href="register.html"><span class="material-icons">person_add</span> Register</a></li>
+            <li><a href="cart.html"><span class="material-icons">shopping_cart</span> Cart</a></li>
+            <li><a href="checkout.html"><span class="material-icons">payment</span> Checkout</a></li>
+            <li><a href="invoice.html"><span class="material-icons">receipt_long</span> Invoice</a></li>
+            <li><a href="dashboard.html"><span class="material-icons">dashboard_customize</span> Dashboard</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h2>Your Shopping Cart</h2>
+    <!-- Table to display cart items -->
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+                <th></th> 
+            </tr>
+        </thead>
+        <tbody id="cart-items"> 
+            </tbody>
+    </table>
+    <!-- Shows total cost of all items -->
+    <p id="cart-total">Total: $0.00</p>
+    <!-- Button that takes user to checkout page -->
+    <a href="checkout.html" class="btn">Proceed to Checkout</a>
+</main>
+
+
+<footer>
+    <p>&copy; 2025 Brian's Craft Shop</p>
+    
+    <button id="logout-btn" class="btn">Logout</button>
+</footer>
+
+<!-- link to javascript-->
+<script src="cart.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
