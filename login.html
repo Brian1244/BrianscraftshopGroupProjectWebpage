@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic page setup -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login| Brian's Craft Shop</title>
+
+    <!-- Icons and CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+    
+    <main>
+        <!-- Logo -->
+        <img src="Brian'scraftshop.png" alt="Brian's craft shop Logo" class="logo">
+
+        <h2>Login</h2>
+
+        <!-- Login form -->
+        <form id="login-form">
+            <label for="trn">TRN:</label>
+            <input type="text" id="trn" name="trn" placeholder="000-000-000" pattern="\d{3}-\d{3}-\d{3}" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter password" required>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <!-- Link to registration page -->
+        <p>Don't have an account?</p>
+        <a href="register.html">
+            <button type="button">Register Here</button>
+        </a>
+
+       
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Brian's Craft Shop</p>
+
+        <!-- Link to home -->
+        <a href="index.html">Home(click)</a>
+    </footer>
+
+     <!-- Scripts -->
+        <script src="login.js"></script>
+        <script src="main.js"></script>
+</body>
+</html>

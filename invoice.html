@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic page setup -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Invoice | Brian's Craft Shop</title>
+
+    <!-- Icons and CSS link -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <!-- Logo -->
+    <img src="Brian'scraftshop.png" alt="Brian's craft shop Logo" class="logo">
+
+    <h1>Brian's Craft Shop</h1>
+
+    <!-- Navigation bar -->
+    <nav>
+    <ul>
+        <li><a href="index.html"><span class="material-icons">home</span> home</a></li>
+        <li><a href="about.html"><span class="material-icons">info</span> About</a></li>
+        <li><a href="login.html"><span class="material-icons">login</span> Login</a></li>
+        <li><a href="register.html"><span class="material-icons">person_add</span> Register</a></li>
+        <li><a href="cart.html"><span class="material-icons">shopping_cart</span> Cart</a></li>
+        <li><a href="checkout.html"><span class="material-icons">payment</span> Checkout</a></li>
+        <li><a href="invoice.html"><span class="material-icons">receipt_long</span> Invoice</a></li>
+        <li><a href="dashboard.html"><span class="material-icons">dashboard_customize</span> Dashboard</a></li>
+    </ul>
+    </nav>
+</header>
+
+<main>
+    <h2>Invoice</h2>
+
+    <!-- Invoice details -->
+    <div id="invoice-details">
+        <p id="invoice-date"></p>
+
+        <!-- Table for items -->
+        <table id="invoice-table">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Qty</th>
+                    <th>Price</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Items will be added here -->
+            </tbody>
+        </table>
+
+        <!-- Totals section -->
+        <div id="invoice-totals">
+            <p id="subtotal"></p>
+            <p id="tax"></p>
+            <p id="total"></p>
+        </div>
+    </div>
+
+    <!-- Print button -->
+    <div class="buttons">
+        <button id="print-invoice" class="btn">Print Invoice</button>
+        <button id="show-all-invoices">Show All Invoices</button>
+        <button id="my-invoices">My Invoices</button>
+
+    </div>
+
+    <div id="invoice-results-container"> </div>
+</main>
+
+<footer>
+    <p>&copy; 2025 Brian's Craft Shop</p>
+
+    <!-- Logout button -->
+    <button id="logout-btn" class="btn">Logout</button>
+</footer>
+
+<!-- Scripts -->
+<script src="invoice.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title -->
+    <title>Checkout | Brian's Craft Shop</title>
+
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--  CSS link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <!-- Logo -->
+    <img src="Brian'scraftshop.png" alt="Brian's craft shop Logo" class="logo">
+
+    <h1>Brian's Craft Shop</h1>
+
+    <!-- Navigation Bar -->
+    <nav>
+    <ul>
+        <li><a href="index.html"><span class="material-icons">home</span> home</a></li>
+        <li><a href="about.html"><span class="material-icons">info</span> About</a></li>
+        <li><a href="login.html"><span class="material-icons">login</span> Login</a></li>
+        <li><a href="register.html"><span class="material-icons">person_add</span> Register</a></li>
+        <li><a href="cart.html"><span class="material-icons">shopping_cart</span> Cart</a></li>
+        <li><a href="checkout.html"><span class="material-icons">payment</span> Checkout</a></li>
+        <li><a href="invoice.html"><span class="material-icons">receipt_long</span> Invoice</a></li>
+        <li><a href="dashboard.html"><span class="material-icons">dashboard_customize</span> Dashboard</a></li>
+    </ul>
+    </nav>
+</header>
+
+<main>
+    <h2>Checkout</h2>
+
+    <!-- Checkout form -->
+    <form>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label for="address">Shipping Address:</label>
+        <input type="text" id="address" placeholder="Enter your address">
+
+        <label for="payment">Amount to Pay:</label>
+        <input type="text" id="payment" placeholder="$0.00" readonly>
+
+        <!-- Form buttons -->
+        <div class="buttons">
+            <button type="submit">Confirm</button>
+            <button onclick="location.href='cart.html'" type="reset">Cancel</button>
+        </div>
+    </form>
+
+    <!-- Link to Js -->
+    <script src="checkout.js"></script>
+</main>
+
+<footer>
+    <p>&copy; 2025 Brian's Craft Shop</p>
+
+    <!-- Logout button -->
+    <button id="logout-btn" class="btn">Logout</button>
+</footer>
+
+<!-- Main script -->
+<script src="main.js"></script>
+
+</body>
+</html>
